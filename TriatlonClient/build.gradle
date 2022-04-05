@@ -1,0 +1,25 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+mainClassName='MainFX'
+jar{
+    manifest{
+        attributes('Main-Class':'MainFX')
+    }
+    from{
+        configurations.compile.collect{it.isDirectory() ? it : zipTree(it)}
+    }
+}
+
+
+dependencies {
+    compile project(":TriatlonDomain")
+    compile project(":TriatlonService")
+    compile project(":TriatlonNetwork")
+
+}
+

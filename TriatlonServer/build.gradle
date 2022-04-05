@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+mainClassName='StartRPCServer'
+jar{
+    manifest{
+        attributes('Main-Class':'StartRPCServer')
+    }
+    from{
+        configurations.compile.collect{it.isDirectory() ? it : zipTree(it)}
+    }
+}
+
+
+dependencies {
+   compile project(":TriatlonDomain")
+   compile project(":TriatlonPersistence")
+   compile project(":TriatlonService")
+   compile project(":TriatlonNetwork")
+}

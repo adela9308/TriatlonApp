@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/util http://www.springframework.org/schema/util/spring-util.xsd">
+
+
+    <util:properties id="jdbcProps" location="classpath:bd.config.properties"/>
+
+    <bean id="repoArbitruDB" class="triatlon.persistence.repository.RepositoryArbitruDB">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+
+    <bean id="repoArbitruDBHibernate" class="triatlon.persistence.repository.RepositoryArbitruDBHibernate">
+    </bean>
+
+    <bean id="repoParticipantDB" class="triatlon.persistence.repository.RepositoryParticipantDB">
+        <constructor-arg ref="jdbcProps"/>
+    </bean>
+
+    <bean id="repoProbaDB" class="triatlon.persistence.repository.RepositoryProbaDB">
+        <constructor-arg ref="jdbcProps"/>
+        <constructor-arg ref="repoArbitruDB"/>
+    </bean>
+
+    <bean id="repoRezultatDB" class="triatlon.persistence.repository.RepositoryRezultatDB">
+        <constructor-arg ref="jdbcProps"/>
+        <constructor-arg ref="repoProbaDB"/>
+        <constructor-arg ref="repoParticipantDB"/>
+    </bean>
+
+    <bean id="service" class="service.Service">
+        <constructor-arg ref="repoProbaDB"/>
+        <constructor-arg ref="repoParticipantDB"/>
+        <constructor-arg ref="repoRezultatDB"/>
+<!--        <constructor-arg ref="repoArbitruDB"/>-->
+        <constructor-arg ref="repoArbitruDBHibernate"/>
+    </bean>
+
+    <bean class="org.springframework.remoting.rmi.RmiServiceExporter">
+
+        <property name="serviceName" value="Triatlon"/>
+        <property name="service" ref="service"/>
+        <property name="serviceInterface" value="triatlon.service.IService"/>
+        <property name="servicePort" value="1099"/>
+    </bean>
+
+</beans>

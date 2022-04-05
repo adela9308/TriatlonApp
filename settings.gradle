@@ -1,0 +1,10 @@
+rootProject.name = 'ProjectClientServcer'
+include 'TriatlonDomain'
+include 'TriatlonServer'
+include 'TriatlonPersistence'
+include 'TriatlonClient'
+include 'TriatlonRun'
+include 'TriatlonService'
+include 'TriatlonNetwork'
+include 'TriatlonRestService'
+

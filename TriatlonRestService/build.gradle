@@ -1,0 +1,62 @@
+//buildscript {
+//    repositories {
+//        mavenCentral()
+//    }
+//    dependencies {
+//        classpath("org.springframework.boot:spring-boot-gradle-plugin:1.5.3.RELEASE")
+//    }
+//}
+//apply plugin: 'java'
+//apply plugin: 'idea'
+//apply plugin: 'org.springframework.boot'
+//
+//jar {
+//    baseName = 'triatlon-rest-service'
+//    version =  '0.1.0'
+//}
+//
+//group 'org.example'
+//version '1.0-SNAPSHOT'
+//
+//repositories {
+//    mavenCentral()
+//}
+//
+//
+//dependencies {
+//    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.6.0'
+//    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine'
+//    compile project(':TriatlonDomain')
+//    compile project(':TriatlonPersistence')
+//    compile("org.springframework.boot:spring-boot-starter-web")
+//    testCompile('org.springframework.boot:spring-boot-starter-test')
+//    testCompile('com.jayway.jsonpath:json-path')
+////    testCompile('org.springframework.boot:spring-boot-starter-test')
+//}
+//
+//test {
+//    useJUnitPlatform()
+//}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+
+
+buildscript{
+    repositories{
+        mavenCentral()
+    }
+    dependencies{
+        classpath('org.springframework.boot:spring-boot-gradle-plugin:2.4.5')
+    }
+}
+
+apply plugin: 'org.springframework.boot'
+
+
+dependencies {
+    compile project(':TriatlonPersistence')
+    compile("org.springframework.boot:spring-boot-starter-web:2.4.5")
+    testCompile('org.springframework.boot:spring-boot-starter-test:2.4.5')
+    testCompile('com.jayway.jsonpath:json-path')
+}

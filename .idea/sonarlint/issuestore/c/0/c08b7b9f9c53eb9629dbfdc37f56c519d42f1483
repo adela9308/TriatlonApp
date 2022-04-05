@@ -1,0 +1,10 @@
+
+H
+java:S6126~"2Replace this String concatenation with Text block.(Ö—ù
+R	java:S125’"<This block of commented-out lines of code should be removed.(ö¹ü–
+N
+java:S6126©"2Replace this String concatenation with Text block.(¸˜…Óşÿÿÿÿ
+N
+java:S6126Á"2Replace this String concatenation with Text block.(ò­ıÕüÿÿÿÿ
+g	java:S117¥"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(“Õ¿æ
+l	java:S117½"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÈˆÊ€üÿÿÿÿ

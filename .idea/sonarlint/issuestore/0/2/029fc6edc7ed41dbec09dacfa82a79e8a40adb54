@@ -1,0 +1,25 @@
+
+[
+java:S1124"EReorder the modifiers to comply with the Java Language Specification.(âŒ†Ô
+U
+java:S1854"@Remove this useless assignment to local variable "restTemplate".(— ’
+F
+java:S1481"1Remove this unused "restTemplate" local variable.(— ’
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Ÿ´Ñ
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¸Ë‹
+N	java:S106"9Replace this use of System.out or System.err by a logger.(¯Ä ß
+N	java:S106"9Replace this use of System.out or System.err by a logger.(Îî
+N	java:S106"9Replace this use of System.out or System.err by a logger.(İÛÓ™
+S	java:S106 "9Replace this use of System.out or System.err by a logger.(…ß¥Èüÿÿÿÿ
+S	java:S106&"9Replace this use of System.out or System.err by a logger.(åË¸áÿÿÿÿÿ
+N	java:S106*"9Replace this use of System.out or System.err by a logger.(ÀŒ©
+N	java:S106,"9Replace this use of System.out or System.err by a logger.(Îî
+N	java:S1061"9Replace this use of System.out or System.err by a logger.(Ô˜¨Ñ
+S	java:S1065"9Replace this use of System.out or System.err by a logger.(É¥İ×ùÿÿÿÿ
+N	java:S1067"9Replace this use of System.out or System.err by a logger.(Îî
+G
+java:S16029",Remove useless curly braces around statement(‘› ¨ÿÿÿÿÿ
+S	java:S106:"9Replace this use of System.out or System.err by a logger.(²ƒ ıÿÿÿÿ
+M	java:S106="9Replace this use of System.out or System.err by a logger.(ÎÀæ
+S	java:S106H"9Replace this use of System.out or System.err by a logger.(Ëàşşÿÿÿÿ
+Q	java:S125G"<This block of commented-out lines of code should be removed.(Èíñ˜

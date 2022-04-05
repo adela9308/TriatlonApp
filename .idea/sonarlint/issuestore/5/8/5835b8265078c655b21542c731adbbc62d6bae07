@@ -1,0 +1,37 @@
+
+œ
+java:S1186"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ñüÿÿÿÿ
+F
+java:S2160"+Override the "equals" method in this class.(·„¶¼ùÿÿÿÿ
+?
+java:S1948")Make "service" transient or serializable.(Û¹Úä
+=
+java:S1948"'Make "stage" transient or serializable.(Œ©Äè
+I
+java:S1948,"4Make "modelParticipantsPoints" private or transient.(¾Ö±a
+M
+java:S1948-"2Make "modelProbaParticipant" private or transient.(’ˆÇÎøÿÿÿÿ
+K
+java:S1948."6Make "modelParticipantFromProba" private or transient.(ı®‡I
+I
+java:S19480".Make "logoutButton" transient or serializable.(Ã»üÕùÿÿÿÿ
+A
+java:S19482"+Make "labelName" transient or serializable.(ÔŸ
+Q
+java:S19484"6Make "participantsListView" transient or serializable.(ÛŞ™·ùÿÿÿÿ
+N
+java:S19486"3Make "nopointsTextField" transient or serializable.(øÑòİşÿÿÿÿ
+X
+java:S19488"BMake "participantsNotFromProbaListView" transient or serializable.(ş™©
+Z
+java:S1948:"?Make "participantsFromProbaListView" transient or serializable.(Ûó¢Ãüÿÿÿÿ
+Q	java:S125}"<This block of commented-out lines of code should be removed.(Éøªû
+O
+java:S1128"4Remove this unused import 'javafx.beans.Observable'.(æ ûÿÿÿÿ
+a
+java:S1128
+"KRemove this unused import 'javafx.scene.control.cell.PropertyValueFactory'.(àÎ¬õ
+Y
+java:S1128"CRemove this unused import 'java.rmi.server.RMIClientSocketFactory'.(ˆÁ‘ş
+^
+java:S1128"CRemove this unused import 'java.rmi.server.RMIServerSocketFactory'.(ÙŠ×Şşÿÿÿÿ

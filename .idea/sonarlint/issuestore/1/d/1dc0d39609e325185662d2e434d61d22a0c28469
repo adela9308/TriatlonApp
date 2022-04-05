@@ -1,0 +1,9 @@
+
+=
+java:S1170"!Make this final field static too.(æ­­_8ž†êÊÿ/
+U	java:S106+"9Replace this use of System.out or System.err by a logger.(Ý²¼”8«†êÊÿ/
+U	java:S106."9Replace this use of System.out or System.err by a logger.(âƒ´œ8¬†êÊÿ/
+X	java:S1254"<This block of commented-out lines of code should be removed.(Û›º8Ã†êÊÿ/
+X	java:S125b"<This block of commented-out lines of code should be removed.(Í–•…8Ó†êÊÿ/
+P
+java:S1068"3Remove this unused "repoParticipant" private field.(­°±³8×†êÊÿ/
