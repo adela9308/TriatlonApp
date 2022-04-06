@@ -7,6 +7,13 @@ Aplicația a fost dezvoltată pentru a asista organizatorii unui concurs de tria
 obținute de participanți, fiecare persoana responsabilă de o probă (arbitrul) are un cont de utilizator în cadrul 
 aceste aplicații. 
 
+
+## Tehnologii
+
+- Limbaj de programare: Java 
+- GUI: JavaFX
+- Bază de date: SQLite
+
 ## Funcționalități
 
 - _Login:_ După autentificarea cu succes, o nouă fereastră se deschide în care sunt afișate numele arbitrului,
@@ -18,12 +25,6 @@ participanților și numărul total de puncte obținute se actualizează automat
 - _Raport:_ Un arbitru poate vizualiza în altă listă/alt tabel toți participanții care au obținut puncte la proba
 respectivă în ordine descrescătoare după numărul de puncte obținut. 
 - _Logout_
-
-## Tehnologii
-
-- Limbaj de programare: Java 
-- GUI: JavaFX
-- Bază de date: SQLite
 
 ## Rulare
 - Se rulează serverul din subproiectul TriatlonServer, fișierul StartRPCServer.java (TriatlonServer\src\main\java\StartRPCServer.java)
